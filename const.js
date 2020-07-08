@@ -2,6 +2,7 @@
 //Final Project - The Search of Mother
 //CS099
 //Spring, 2020
+const START = 0
 const MAINMENU = 1
 const SETTING = 2
 const HTP = 3

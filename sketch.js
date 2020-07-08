@@ -2,7 +2,7 @@
 //Final Project - The Search of Mother
 //CS099
 //Spring, 2020
-let currentScene = MAINMENU
+let currentScene = START
 let noiseP1
 let noiseP2
 const frame1 = 500
@@ -15,43 +15,6 @@ let screamSwitch = false
 let crySwitch = false
 let dieSoundSwitch = false
 let runningSwitch = false
-let bgs
-let gamebgs
-let hunterbgs
-let diebgs
-let clearbgs
-let dinoscreaming
-let pterocrying
-let buttonsound
-let mnbgi
-let st1bgi
-let st5bgi
-let clearbgi
-let bush1
-let bush2
-let arrow
-let die
-let blood
-let poo
-let title
-let htpimg
-let creditsimg
-let settingimg
-let pauseimg
-let clearimg
-let mbdimg
-
-let tile1
-let MainMenuScene
-let SettingScene
-let HowtoPlayScene
-let CreditsScene
-let ClearScene
-let PauseScene
-let YouDiedScene
-let BabyDino
-let CallObstacle
-let TextBox
 
 function preload() {
   //sound
@@ -88,6 +51,7 @@ function setup() {
   frameRate(60)
   createCanvas(800, 600);
   tile1 = new tile(50, currentScene)
+  StartScene = new start()
   MainMenuScene = new mainmenu()
   SettingScene = new setting()
   HowtoPlayScene = new htp()
@@ -106,7 +70,6 @@ function setup() {
   pterocrying.setVolume(0.5)
   dinoscreaming.setVolume(0.5)
   buttonsound.setVolume(0.5)
-  bgs.loop()
 }
 
 function draw() {
@@ -136,6 +99,10 @@ function draw() {
   noiseP2 = float(count % frame2) / frame2
   count++
   switch (currentScene) {
+    case START:
+      StartScene.update()
+      StartScene.draw()
+      break;
     case MAINMENU:
       MainMenuScene.update()
       MainMenuScene.reset(BabyDino, CallObstacle)
