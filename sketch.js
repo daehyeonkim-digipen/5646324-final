@@ -25,6 +25,7 @@ function preload() {
   clearbgs = loadSound("material/ClearBackgroundSound.mp3")
   dinoscreaming = loadSound("material/BigDinoSound.mp3")
   pterocrying = loadSound("material/pteroSound.mp3")
+  buttonsound = loadSound("material/button.mp3")
   //image
   mnbgi = loadImage("material/MainBGimage.png")
   st1bgi = loadImage("material/BGimage.jpg")
@@ -60,7 +61,6 @@ function setup() {
   BabyDino = new babyDino(25, 25, 100, 120, 55, 0)
   CallObstacle = new callObstacle()
   TextBox = new textbox()
-  bgs.loop()
   bgs.setVolume(0.5)
   gamebgs.setVolume(0.5)
   diebgs.setVolume(0.5)
@@ -68,7 +68,8 @@ function setup() {
   clearbgs.setVolume(0.5)
   pterocrying.setVolume(0.5)
   dinoscreaming.setVolume(0.5)
-
+  buttonsound.setVolume(0.5)
+  bgs.loop()
 }
 
 function draw() {

@@ -39,10 +39,13 @@ class mainmenu {
       bgs.stop()
       gamebgs.loop()
     } else if (this.setting.DidClickButton()) {
+      buttonsound.play()
       currentScene = SETTING
     } else if (this.HowtoPlay.DidClickButton()) {
+      buttonsound.play()
       currentScene = HTP
     } else if (this.credits.DidClickButton()) {
+      buttonsound.play()
       currentScene = CREDITS
     }
   }

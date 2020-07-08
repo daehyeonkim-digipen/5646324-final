@@ -10,6 +10,7 @@ class htp {
 
   update() {
     if (this.mainmenu.DidClickButton()) {
+      buttonsound.play()
       currentScene = MAINMENU
     }
   }

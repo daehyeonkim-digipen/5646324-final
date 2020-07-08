@@ -13,8 +13,10 @@ class pause {
     if (this.backtoGame.DidClickButton()) {
       currentScene = PLAY
     } else if (this.setting.DidClickButton()) {
+      buttonsound.play()
       currentScene = SETTING
     } else if (this.mainmenu.DidClickButton()) {
+      buttonsound.play()
       currentScene = MAINMENU
       gamebgs.stop()
       bgs.loop()

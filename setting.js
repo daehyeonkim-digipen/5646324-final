@@ -25,12 +25,14 @@ class setting {
     diebgs.setVolume(this.value1)
     hunterbgs.setVolume(this.value1)
     clearbgs.setVolume(this.value1)
-
+    buttonsound.setVolume(this.value2)
     frameRate(this.value3)
     if (this.back.DidClickButton()) {
       if (!duringGame) {
+        buttonsound.play()
         currentScene = MAINMENU
       } else if (duringGame) {
+        buttonsound.play()
         currentScene = PAUSE
       }
     }

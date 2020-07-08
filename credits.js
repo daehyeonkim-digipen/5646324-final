@@ -5,6 +5,7 @@ class credits {
 
   update() {
     if (this.mainmenu.DidClickButton()) {
+      buttonsound.play()
       currentScene = MAINMENU
     }
   }
