@@ -15,6 +15,43 @@ let screamSwitch = false
 let crySwitch = false
 let dieSoundSwitch = false
 let runningSwitch = false
+let bgs
+let gamebgs
+let hunterbgs
+let diebgs
+let clearbgs
+let dinoscreaming
+let pterocrying
+let buttonsound
+let mnbgi
+let st1bgi
+let st5bgi
+let clearbgi
+let bush1
+let bush2
+let arrow
+let die
+let blood
+let poo
+let title
+let htpimg
+let creditsimg
+let settingimg
+let pauseimg
+let clearimg
+let mbdimg
+
+let tile1
+let MainMenuScene
+let SettingScene
+let HowtoPlayScene
+let CreditsScene
+let ClearScene
+let PauseScene
+let YouDiedScene
+let BabyDino
+let CallObstacle
+let TextBox
 
 function preload() {
   //sound
@@ -37,7 +74,7 @@ function preload() {
   die = loadImage("material/die.png")
   blood = loadImage("material/blood.png")
   poo = loadImage("material/POO.png")
-  
+
   title = loadImage("material/Title.png")
   htpimg = loadImage("material/HowtoPlay.png")
   creditsimg = loadImage("material/Credits.png")
